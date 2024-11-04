@@ -1,0 +1,13 @@
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-sidebar div {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  

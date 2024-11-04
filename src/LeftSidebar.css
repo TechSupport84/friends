@@ -1,0 +1,14 @@
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .left-sidebar li:hover {
+    color: #4267B2;
+  }
+  
