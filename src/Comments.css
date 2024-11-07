@@ -1,0 +1,42 @@
+.form-comment{
+    padding: 10px;
+}
+.comment{
+    outline: none;
+    border:1px solid #ddd;
+}
+.comment:hover{
+    padding:20px;
+    margin: auto;
+}
+.user-comment{
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.menu-dot{
+    float: right;
+    top: 0;
+}
+.username-comment{
+    display: block;
+    margin-left: 50px;
+}
+.display-comment{
+border: 1px solid #ddd;
+border-radius: 5px;
+background-color: #f9f9f9;;
+margin-bottom: 10px;
+border-bottom: 1px solid #ddd;
+padding: 10px;
+}
+.user-comment-info{
+    border-bottom: 1px solid #fff;
+
+}
+.CommentIcon:hover{
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 9px;
+}

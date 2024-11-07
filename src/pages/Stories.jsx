@@ -1,18 +1,27 @@
 import React from 'react';
 import '../Stories.css';
+import AddButton from '../components/Addbutton';
 
 const storiesData = [
-  { id: 1, name: "Alice", image: "https://via.placeholder.com/100" },
-  { id: 2, name: "Bob", image: "https://via.placeholder.com/100" },
-  { id: 3, name: "Carol", image: "https://via.placeholder.com/100" },
-  { id: 4, name: "Dave", image: "https://via.placeholder.com/100" },
-  { id: 5, name: "Eve", image: "https://via.placeholder.com/100" },
+  { id: 1, name: "Alice", image: "../jeancy.jpg" },
+  { id: 2, name: "Bob", image: "../product2.jpg" },
+  { id: 3, name: "Carol", image: "../user.png" },
+  { id: 4, name: "Dave", image: "../user.png" },
+  { id: 5, name: "Eve", image: "../user.png" },
   // Add more story data here
 ];
 
 const Stories = () => {
   return (
+    <>
+          <div className="memories-title">
+        <span className='memory'>Memories</span>
+      </div>
+  
     <div className="stories">
+     <div className="create-memory">
+      <AddButton />
+     </div>
       {storiesData.map((story) => (
         <div key={story.id} className="story">
           <img src={story.image} alt={story.name} className="story-image" />
@@ -20,6 +29,7 @@ const Stories = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

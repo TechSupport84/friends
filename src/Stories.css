@@ -1,11 +1,13 @@
 .stories {
+
     display: flex;
     overflow-x: auto;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 8px;
     margin-bottom: 20px;
-    scrollbar-width: thin; /* Firefox */
+    scrollbar-width:none; /* Firefox */
+    align-content: center;
   }
   
   .story {
@@ -42,3 +44,18 @@
     border-radius: 10px;
   }
   
+  .memory{
+    font-size: 20ppx;
+    font-weight: bold;
+    color: #4267B2;
+
+  }
+  .create-memory{
+    align-self: center;
+    background-color: #ccc;
+    padding:20px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 5px;
+  }

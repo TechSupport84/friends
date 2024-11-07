@@ -1,0 +1,41 @@
+/* Add this to your global CSS or a specific file */
+
+@media (max-width: 768px) {
+  .user-profile-content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+  }
+
+  button {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .other-components {
+    display: none;
+  }
+}
+.pic-profile{
+  float: left;
+}
+.user-detail{
+  color: #1b1b1d;
+  font-size: 18px;
+  font-weight: bold;
+  text-justify: inter-word;
+  padding: 5px;
+  padding-left:70px;
+}
+.details{
+  display: block;
+}
+.connexion{
+  display: block;
+  margin-bottom: 0;
+  border-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.left-side{
+    display: flex;
+
+}
+.link-logo {
+    background: linear-gradient(to left, #5151a1, #7e5080, #1b4930);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: bold;
+ }
+.screens{
+    display: flex;
+    flex-direction: row;
+}
+
+  
+@media (max-width: 768px) {
+    .screens{
+      flex-direction: column;
+    }
+  
+    .left-side, .link-logo{
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  

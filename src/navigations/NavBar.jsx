@@ -1,35 +1,46 @@
 import React, { useState } from 'react';
+import { BiBell, BiGroup, BiHomeAlt, BiVideo } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
+import UserProfile from '../screens/UserProfile'; // Assuming UserProfile component is already created
 
 const NavBar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  // Function to handle profile icon click
+  const handleProfileClick = () => {
+    setIsModalOpen(!isModalOpen); // Toggle modal visibility
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <a href="#" className="logo">MyApp</a>
-      </div>
-
-      <div className="navbar-center">
-        <input type="text" placeholder="Search..." className="search-input" />
-      </div>
-
-      <div className={`navbar-right ${isMobileMenuOpen ? 'show' : ''}`}>
-        <a href="#" className="nav-link">Home</a>
-        <a href="#" className="nav-link">Network</a>
-        <a href="#" className="nav-link">Jobs</a>
-        <a href="#" className="nav-link">Messages</a>
-        
-        <div className="icon-container">
-          <a href="#"><img src="notification-icon.png" alt="Notifications" className="icon" /></a>
-          <a href="#"><img src="profile-icon.png" alt="Profile" className="icon" /></a>
+        <a href="#" className="logo">Friends</a>
+        <div className="navbar-center">
+          <input type="text" placeholder="Search..." className="search-input" />
         </div>
       </div>
 
-      <button className="menu-toggle" onClick={toggleMobileMenu}>☰</button>
+      <a href="#" className="nav-link"><BiHomeAlt size={30} onClick={() => navigate("/")} /></a>
+      <a href="#" className="nav-link"><BiVideo size={30} onClick={() => navigate("/video")} /></a>
+      <a href="#" className="nav-link"><BiGroup size={30} /></a>
+      <a href="#" className="nav-link"><BiBell size={30} /></a>
+
+      <div className="navbar-right">
+        <div className="icon-container">
+          <a href="#"><img src="../menu.png" alt="Menu" className="icon" /></a>
+          <a href="#"><img src="../chat.png" alt="Chat" className="icon" /></a>
+        
+          <a href="#" onClick={handleProfileClick}>
+            <img src="../jeancy.jpg" alt="Profile" className="icon user-profile" />
+            
+          </a>
+          
+        </div>
+      </div>
+
+      {/* Render UserProfile Modal if isModalOpen is true */}
+      {isModalOpen && <UserProfile />}
     </nav>
   );
 };

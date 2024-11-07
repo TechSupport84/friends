@@ -1,0 +1,37 @@
+/* Container styling for centering and padding */
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Video styling */
+  .video-player {
+    border-radius: 8px;
+    width: 100%; /* Ensures the video scales within its container */
+    max-width: 100%;
+    outline: none;
+  }
+  
+  /* Custom video controls styling */
+  .video-player::-webkit-media-controls-panel {
+    background-color: #333;
+  }
+  
+  .video-player::-webkit-media-controls-play-button,
+  .video-player::-webkit-media-controls-volume-slider {
+    background-color: #555;
+    color: white;
+  }
+  
+  .video-player::-webkit-media-controls-current-time-display,
+  .video-player::-webkit-media-controls-time-remaining-display {
+    color: white;
+  }
+  
