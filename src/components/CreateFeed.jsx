@@ -22,7 +22,7 @@ const style = {
   pt: 2,
   px: 4,
   pb: 3,
-  position: 'relative'  // Enable positioning for the close button
+
 };
 
 const closeButtonStyle = {
