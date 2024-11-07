@@ -1,4 +1,17 @@
 
+.create-feed{
+background-color:#fff;
+padding: 15px;
+width: 100%;
+border-radius: 10px;
+}
+.create-feed:hover{
+  background-color:#f5efef;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
 /* Tablet view */
 @media (max-width: 768px) {
   .modal-box {
@@ -60,23 +73,24 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 
     
 }
 .profiles{
   margin: 5px;
+  float: left;
 }
 .user-profile{
     width:50px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #4267B2; 
+    float:left;
 
 }
 
-.profile-info-modal{
 
-}
 .sep-line-modal{
     border-bottom: 1px solid #ddd;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);

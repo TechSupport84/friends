@@ -77,7 +77,9 @@ function NestedModal({ open, onClose }) {
             </div>
             </div>
              <div className="sep-line-modal"/>
-             <div className="files-upload">
+             <div className="files-upload" 
+                           onClick={()=>setIsButtonVisible(true)}
+              >
               <BiImageAdd size={30} />
               <BiVideo size={30} />
               <BiVideoRecording size={30} />
@@ -109,18 +111,15 @@ function CreateFeed() {
           <div className="profiles">
             <img src="../jeancy.jpg" alt="user" className="user-profile" width="40px" />
           </div>
-          <input
-            type="text"
-            className="create-feed"
-            placeholder={`What's Up ${username}?`}
-            onClick={() => setModalOpen(true)}
-          />
+          <div className="create-feed"   onClick={() => setModalOpen(true)}>
+            {`What's Up ${username}?`}
+          </div>
         </div>
         <div className="sep-feed" />
-        <div className="file-feed">
-          <a href=""><BiVideo size={40} /></a>
-          <a href=""><BiPhotoAlbum size={40} /></a>
-          <a href=""><BsFillRecord2Fill size={40} /></a>
+        <div className="file-feed"   onClick={() => setModalOpen(true)}>
+          <a href="#"><BiVideo size={40} /></a>
+          <a href="#"><BiPhotoAlbum size={40} /></a>
+          <a href="#"><BsFillRecord2Fill size={40} /></a>
         </div>
       </div>
       

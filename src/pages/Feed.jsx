@@ -53,12 +53,22 @@ const Feed = () => {
    
              <div className='sep-post'/>             
               <div className="post-likebar">
+                <div className="like">
               <BiLike size={25} color='gray'/>
+              12k Likes
+              </div>
               <div className="CommentIcon">
               <BiCommentAdd size={25} color='gray'onClick={()=>setVisible(!visible)} className='commentIcon'/>
+                232 Comments
               </div>
+              <div className="earn-money">
               <BiDollar size={25} color='gray'/>
+                 3 Won
+              </div>
+              <div className="shared">
               <BiShare size={25}color='gray' />
+              Share 23k
+              </div>
 
               </div>
 
