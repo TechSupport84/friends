@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 export default function CustomButton({text, onClick}) {
   return (
-    <Stack spacing={2} direction="row">
+    <Stack spacing={2} direction="row" style={{margin:10}}>
       <Button variant="contained" onclick={onClick}>{text}</Button>
     
     </Stack>

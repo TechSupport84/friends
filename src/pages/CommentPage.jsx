@@ -20,8 +20,8 @@ function CommentPage() {
             onFocus={() => setIsButtonVisible(true)}
             onBlur={() => setIsButtonVisible(false)}
           />
-          {isButtonVisible? <CustomButton text={"Comment"} onclick={()=>{}} />:(
-            <ButtonDisabled  text={"Comment"} onClick={()=>{}}/>
+          {isButtonVisible? <CustomButton text={"Add"} onclick={()=>{}} />:(
+            <ButtonDisabled  text={"Add"} onClick={()=>{}}/>
           )}
         </form>
       </div>

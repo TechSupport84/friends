@@ -1,31 +1,35 @@
-
-.create-feed{
-background-color:#fff;
-padding: 15px;
-width: 100%;
-border-radius: 10px;
-}
-.create-feed:hover{
-  background-color:#f5efef;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-
-/* Tablet view */
-@media (max-width: 768px) {
-  .modal-box {
-    width:400; /* Adjust width as needed */
-  }
+/* Modal Box */
+.modal-box {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed; /* Fix the modal in place */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; /* Ensure the modal is on top of other content */
+  padding: 20px;
+  overflow: auto; /* Ensures modal is scrollable on smaller screens */
+  max-height: 90%; /* Ensures the modal doesn't exceed the viewport height */
+  background: rgba(0, 0, 0, 0.5); /* Darkens the background behind the modal */
 }
 
-/* Mobile view */
-@media (max-width: 480px) {
-  .modal-box {
-    width:400; /* Full width on mobile */
-  }
+/* Modal Content Box */
+.MuiBox-root {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 24px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
+/* Close Button Style */
 .close-button {
   position: absolute;
   top: 10px;
@@ -34,159 +38,173 @@ border-radius: 10px;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: #333; /* Ensures button is visible */
+  z-index: 10000; /* Ensure the close button is above the modal content */
 }
 
-.files-upload svg {
-  font-size: 24px; /* Adjust icons size for smaller screens */
+/* Header Style */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center; /* Center the header text */
 }
 
+/* Separator Line in Modal */
+.sep-line-modal {
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+/* Textarea */
 .create-input {
-  width: 100%; /* Ensure text area width scales with modal */
+  width: 100%;
+  height: 100px; /* Increased height for more space */
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 15px; /* Space between the input and button */
 }
 
-
-.container-feed{
-    background-color: #ddd;
-    border-radius: 7px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-
-}
-.sep-feed{
-    border-bottom: 1px solid #fff;
-    margin-top: 15px;
-
+/* File Upload Icon Container */
+.files-upload {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.file-feed{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+/* Button Style */
+button, .CustomButton, .ButtonDisabled {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  display: inline-block;
+}
+
+button:hover, .CustomButton:hover, .ButtonDisabled:hover {
+  background-color: #1559b0;
+}
+
+/* Disabled Button */
+.ButtonDisabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ButtonDisabled:hover {
+  background-color: #ccc;
+}
+
+/* Profile and User Info */
+.profile-info-modal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profiles-modal {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-modal {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details-modal {
+  margin-left: 10px;
+}
+
+.user-id {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-details-modal span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  /* Modal Box Adjustments for Mobile */
+  .modal-box {
+    padding: 10px; /* Less padding on mobile */
+  }
+
+  .MuiBox-root {
+    width: 90%;
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center; /* Center align title */
+  }
+
+  /* Profile Section Adjustments */
+  .profile-info-modal {
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-  
-}
-.input-feed{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+  }
 
-    
-}
-.profiles{
-  margin: 5px;
-  float: left;
-}
-.user-profile{
-    width:50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #4267B2; 
-    float:left;
+  .user-details-modal {
+    font-size: 14px;
+    text-align: center; /* Center align the user info */
+  }
 
-}
-
-
-.sep-line-modal{
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-
-.form-input-post{
-    border: 1px solid #dede;
-
-    padding:0;
-    margin: 0;
-    overflow-y: auto;
-}
-
-.create-input {
-    width: 100%;
-    padding: 10px;
+  .user-id {
     font-size: 16px;
-    border:none;
-    border-radius: 8px;
-    resize: vertical;
-    outline: none;
-    overflow-y: auto;
-    background-color: #f7f7f7;
-    font-size: 18px;
-    
   }
-  
-  .create-input::-webkit-scrollbar {
-    width: 6px;
+
+  /* Textarea */
+  .create-input {
+    font-size: 14px;
+    height: 80px; /* Reduced height to save space */
   }
-  
-  .create-input::-webkit-scrollbar-thumb {
-    background-color: #aaa;
-    border-radius: 10px;
+
+  /* File Upload Icon Container */
+  .files-upload {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
   }
-  
-  .create-input::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+
+  /* Adjust Separator Line */
+  .sep-line-modal {
+    margin: 10px 0;
   }
-  
-.border-form{
-    border: 1px solid #f5f5f5;
-    padding:0;
-    border-radius: 6px;
-    border-bottom:1px solid rgba(122, 120, 120, 0.1);
 
+  /* Button Styling for Mobile */
+  button, .CustomButton, .ButtonDisabled {
+    padding: 10px 15px; /* Reduced padding on mobile */
+    font-size: 14px;
+  }
 }
 
-
-
-.input-post{
-    padding:0;
-    
-}
-.profiles-modal{
-    margin:5px;
-}
-.user-details-modal{
-    display:block;
-
-}
-.user-id{
-    color: #1b1b1d;
-    font-size: 18px;
-    font-weight: bold;
-    text-justify: inter-word;
-    padding: 5px;
-    padding-left:70px;
-}
-.user-profile-modal{
-    width:50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #4267B2; 
-    float: left;
-
-}
-.files-upload{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-    background-color: #f7f7f7;
-    padding: 10px;
-    border-radius: 6px;
-        border-bottom: 1px solid #e0dddd;
-        box-shadow: 4 4px 4px rgba(0, 0, 0, 0.1);
-    
-  
+/* Additional Styles for Mobile Input Feed */
+.input-feed {
+  align-items: center;
 }
 
-.file{
-    width: 100px;
-    height: 100px;
-    background-color: #aaa;
-    float: right;
+.user-profile {
+  float: left;
+  border-radius: 50%;
+}
+
+.create-feed {
+  margin-left: 50px;
+  padding: 10px;
 }

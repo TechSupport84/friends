@@ -36,7 +36,5 @@ padding: 10px;
 
 }
 .CommentIcon:hover{
-    background-color: #ddd;
-    padding: 10px;
-    border-radius: 9px;
+    color:#4267B2;
 }

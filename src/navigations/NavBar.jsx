@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <a href="#" className="logo">ZedLuk</a>
+        <a href="#" className="logo" onClick={() => navigate("/")} >ZedLuk</a>
         <div className="navbar-center">
           <input type="text" placeholder="Search..." className="search-input" />
         </div>
@@ -28,10 +28,10 @@ const NavBar = () => {
 
       <div className="navbar-right">
         <div className="icon-container">
-          <a href="#"><img src="../menu.png" alt="Menu" className="icon" /></a>
-          <a href="#"><img src="../chat.png" alt="Chat" className="icon" /></a>
         
-          <a href="#" onClick={handleProfileClick}>
+          <a href="#"><img src="../chat.png" alt="Chat" className="icon" /></a>
+          <a href="#"><img src="../menu.png" alt="Menu" className="icon" /></a>
+          <a href="#" onClick={() => navigate("/profile")}>
             <img src="../jeancy.jpg" alt="Profile" className="icon user-profile" />
             
           </a>

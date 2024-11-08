@@ -1,0 +1,230 @@
+.feed-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .cover-picture {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+   
+  }
+  
+  .cover-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .button {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cover-button {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .userProfile {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+    
+  }
+  
+  .userImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+ 
+  }
+  
+  .profile-button {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+
+
+  .user-profile-id {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .username {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .email, .phone {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .follower, .following {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .follower a, .following a, .money-earn a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .follower a:hover, .following a:hover, .money-earn a:hover {
+    text-decoration: underline;
+  }
+  
+  .money-earn {
+    margin-bottom: 10px;
+  }
+  
+  .message-Box button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-Box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-edit-profile {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button-edit-profile:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .user-profile-id {
+      padding: 20px;
+    }
+  
+    .username {
+      font-size: 20px;
+    }
+  
+    .email, .phone {
+      font-size: 14px;
+    }
+  
+    .follower, .following {
+      font-size: 13px;
+    }
+  
+    .button-edit-profile {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  .scrollable-feed {
+    width: 100%;
+    max-width: 800px; /* Adjust width as necessary */
+    overflow-y: auto;
+    padding: 20px;
+    margin-top:0;
+  }
+  
+  .post-all {
+    margin-bottom: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .post-likebar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .like-style {
+    font-size: 12px;
+  }
+  
+  .sep-feed,
+  .sep-post {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+
+
+
+  
