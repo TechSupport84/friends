@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function FeedBar() {
   const navigate = useNavigate();
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("All");
 
   const handleNavigation = (page, path) => {
     setCurrentPage(page);
@@ -14,10 +14,10 @@ function FeedBar() {
   return (
     <div className="feed-bar">
       <div 
-        onClick={() => handleNavigation("Home", "/")}
-        className={currentPage === "Home" ? "active" : ""}
+        onClick={() => handleNavigation("All", "/")}
+        className={currentPage === "All" ? "active" : ""}
       >
-        Home
+        All
       </div>
       <div 
         onClick={() => handleNavigation("Videos", "/video")}
