@@ -29,7 +29,6 @@ const Feed = () => {
    <Stories />
    <CreateFeed />
    </div>
-      <h2>Feed</h2>
         {user.map((user)=>(
           <div className="post-all">
           <div  key={user.id}className="post">

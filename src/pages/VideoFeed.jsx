@@ -26,7 +26,6 @@ const VideoFeed= () => {
     <div className="feed">
        <FeedBar />
       
-      <h2>Videos </h2>
         {user.map((user)=>(
           <div className="post-all">
           <div  key={user.id}className="post">
