@@ -9,6 +9,7 @@ import CommentPage from './CommentPage';
 import "../styles/VideoPage.css"
 import { useNavigate } from 'react-router-dom';
 import FeedBar from '../components/FeedBar';
+import Following from '../components/Following';
 
 const user = [
     { id: 1, name: "Jeancy", image: "../jeancy.jpg",Description:"I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me ." ,tme: Date.now()},
@@ -29,13 +30,13 @@ const VideoFeed= () => {
         {user.map((user)=>(
           <div className="post-all">
           <div  key={user.id}className="post">
-
-  
             {user.video  && <div >
                 <div className="post-head">
             <div className="menu-dot">
                   <BiDotsVertical size={30} color='gray'/>
+
                 </div>
+                <Following />
                 <img src={user.image} alt={user.name} className='user-Image'/>
 
               <div className="user-info">

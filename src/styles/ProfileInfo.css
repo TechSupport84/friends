@@ -49,7 +49,7 @@
     border: 2px solid white;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 70px;
+    margin-bottom: 47px;
     
   }
   
@@ -71,6 +71,7 @@
 
 
   .user-profile-id {
+    position: relative;
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 20px;
@@ -96,13 +97,13 @@
     margin-bottom: 10px;
   }
   
-  .follower a, .following a, .money-earn a {
+  .follower a, .following a, .money-earn a ,.followings a{
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
   }
   
-  .follower a:hover, .following a:hover, .money-earn a:hover {
+  .follower a:hover, .following a:hover, .money-earn a:hover ,.followings a:hover{
     text-decoration: underline;
   }
   
@@ -163,6 +164,25 @@
       font-size: 14px;
       padding: 5px 10px;
     }
+  }
+  
+  .follow{
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    float: right;
+ 
+  }
+  
+  .follow:hover{
+    background-color: #007BFF;
+    color: white;
   }
   
 

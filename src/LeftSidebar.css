@@ -1,6 +1,6 @@
 .left-sidebar ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
 }
   
   .left-sidebar li {
@@ -11,4 +11,7 @@
   .left-sidebar li:hover {
     color: #4267B2;
   }
-  
+  .left-sidebar{
+    float: left;
+    left: 0;
+  }

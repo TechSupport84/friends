@@ -6,11 +6,12 @@ const LeftSidebar = () => {
     <div className="left-sidebar">
       <h2>Navigation</h2>
       <ul>
-        <li>Profile</li>
-        <li>My Network</li>
-        <li>Jobs</li>
-        <li>Messaging</li>
-        <li>Notifications</li>
+        <li>$ Earn</li>
+        <li>Images</li>
+        <li>Pages</li>
+        <li>Stats</li>
+        <li>helps</li>
+
       </ul>
     </div>
   );

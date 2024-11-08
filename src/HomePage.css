@@ -1,19 +1,21 @@
 .home-page {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    max-width: 1200px;
+    padding: 20px;
+    max-width: 1300px;
     margin: 0 auto;
   }
   
   .left-sidebar, .right-sidebar {
     flex: 1;
-    max-width: 250px;
+    max-width:500px;
     padding: 20px;
     background-color: #f3f3f3;
     border-radius: 8px;
+    max-height:700px;
+    
   }
-  
+
   .feed {
     flex: 2;
     padding: 20px;
@@ -22,11 +24,13 @@
     border-radius: 8px;
     overflow-y: auto;
     max-height: calc(100vh - 60px);
+
   }
   
   @media (max-width: 768px) {
     .home-page {
       flex-direction: column;
+      padding: 0;
     }
       
     .left-sidebar, .right-sidebar {

@@ -6,11 +6,11 @@
   position: fixed; /* Fix the modal in place */
   top: 0;
   left: 0;
-  right: 0;
+  right:0;
   bottom: 0;
   z-index: 9999; /* Ensure the modal is on top of other content */
   padding: 20px;
-  overflow: auto; /* Ensures modal is scrollable on smaller screens */
+  overflow:auto; /* Ensures modal is scrollable on smaller screens */
   max-height: 90%; /* Ensures the modal doesn't exceed the viewport height */
   background: rgba(0, 0, 0, 0.5); /* Darkens the background behind the modal */
 }
@@ -33,7 +33,8 @@
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 1x;
+  float: right;
   background: none;
   border: none;
   font-size: 24px;
@@ -42,7 +43,7 @@
   z-index: 10000; /* Ensure the close button is above the modal content */
 }
 
-/* Header Style */
+
 h2 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -207,4 +208,7 @@ button:hover, .CustomButton:hover, .ButtonDisabled:hover {
 .create-feed {
   margin-left: 50px;
   padding: 10px;
+}
+.close-button{
+  float: right;
 }

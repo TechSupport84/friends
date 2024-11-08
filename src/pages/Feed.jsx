@@ -8,6 +8,7 @@ import VideoPlayer from '../components/VideoPlayer';
 import CommentPage from './CommentPage';
 import { useNavigate } from 'react-router-dom';
 import FeedBar from '../components/FeedBar';
+import Following from '../components/Following';
 
 const user = [
     { id: 1, name: "Jeancy", image: "../jeancy.jpg",Description:"I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me ." ,tme: Date.now()},
@@ -18,6 +19,7 @@ const user = [
 ]
 const Feed = () => {
   const [visible, setVisible] = useState(false)
+
   return (
     <>
       
@@ -35,11 +37,13 @@ const Feed = () => {
             <div className="menu-dot">
                   <BiDotsVertical size={30} color='gray'/>
                 </div>
+                <Following />
                 <img src={user.image} alt={user.name} className='user-Image'/>
 
               <div className="user-info">
               
                 <h3 className='username-post'>{user.name}</h3>
+                <span>World</span>
                 <p>{user.tme}</p>
 
               </div>

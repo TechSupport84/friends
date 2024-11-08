@@ -47,11 +47,13 @@ function NestedModal({ open, onClose, position }) {
   return (
     <Modal open={open} onClose={onClose} className="modal-box">
       <Box sx={modalStyle}>
+        <div className="right-sided">
         <button onClick={onClose} style={closeButtonStyle} className="close-button">
           <AiOutlineClose size={30} />
         </button>
 
         <h2>Create Post </h2>
+        </div>
         <div className="sep-line-modal" />
         <form method="POST" encType="multipart/form-data">
           <div className="container">

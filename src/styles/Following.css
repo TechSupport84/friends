@@ -1,0 +1,17 @@
+.follower a, .following a, .money-earn a ,.followings a{
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  .follower, .following {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .followings a:hover{
+    text-decoration: underline;
+  }
+  
+  .followings{
+    float: right;
+  }

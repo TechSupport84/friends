@@ -34,8 +34,16 @@ const ProfileInfo = () => {
 
 
 </div>
+
+
 <div className="user-profile-id">
-    Jeancy Mpoyi
+
+    <span>Jeancy Mpoyi</span>
+
+<div className="follow">
+        Follow +
+    </div>
+
     <div className="email">jeancympoyi@gmail.com</div>
     <span>+254 743303216</span>
     <div className="follower">
