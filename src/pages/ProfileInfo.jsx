@@ -21,6 +21,7 @@ const user = [
 ]
 const ProfileInfo = () => {
   const [visible, setVisible] = useState(false)
+  const navigate = useNavigate()
   return (
     <>
      
@@ -62,7 +63,7 @@ const ProfileInfo = () => {
         <a href=''> Earned <BiDollar size={30} />  </a>
     </div>
     <div className="message-Box">
-        <button> <IconSvg /> </button>
+        <button onClick={()=>navigate("/message")}> <IconSvg /> </button>
     </div>
   </div>
  
