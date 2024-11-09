@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useState}from 'react';
 import CustomButton from '../components/Button';
 import "../styles/MessageScreen.css";
+import ButtonDisabled from '../components/ButtonDisable';
 
 function MessageScreen() {
+    const [isPressed, setIsPressed] = useState(false)
   return (
     <div className="message-screen">
           <div className="message-head">Messages</div>
@@ -34,8 +36,15 @@ function MessageScreen() {
       </div>
       <div className="message-input-box">
         <form method="post">
-          <textarea type="text" placeholder="Message" className="message" />
-          <CustomButton onClick={() => {}} text="Send" />
+          <textarea type="text" placeholder="Message" className="message" 
+          onFocus={() =>setIsPressed(true)}
+          onBlur={() =>setIsPressed(false)}/>
+          {isPressed ? 
+            <CustomButton onClick={() => {}} text="Send" />:(
+                <ButtonDisabled text={"Send"} onClick={()=>{}}/>
+            )
+          }
+        
         </form>
       </div>
     </div>

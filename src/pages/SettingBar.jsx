@@ -6,6 +6,7 @@ function SettingBar() {
   const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState("Setting");
 
+
   const handleNavigation = (page, path) => {
     setCurrentPage(page);
     navigate(path);
