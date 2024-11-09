@@ -88,8 +88,6 @@
 
 
 
-
-
 .textarea-container {
   position: relative;
   display: flex;
@@ -105,12 +103,12 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: none;
-  padding-right: 40px; /* Ensure space for the attach button */
+  padding-right: 40px;
 }
 
 .attach-button {
   position: absolute;
-  right: 10px; /* Position it on the right inside the textarea */
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -125,6 +123,7 @@
 }
 
 .file-preview {
+  position: relative;
   margin-top: 10px;
 }
 
@@ -137,4 +136,21 @@
 .file-preview-video {
   width: 100%;
   border-radius: 4px;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: darkred;
 }
