@@ -82,3 +82,59 @@
   margin: 8px 0;
 }
 
+
+
+
+
+
+
+
+
+.textarea-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  padding-right: 40px; /* Ensure space for the attach button */
+}
+
+.attach-button {
+  position: absolute;
+  right: 10px; /* Position it on the right inside the textarea */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+}
+
+.attach-button:hover {
+  text-decoration: underline;
+}
+
+.file-preview {
+  margin-top: 10px;
+}
+
+.file-preview-image {
+  max-width: 40px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.file-preview-video {
+  width: 100%;
+  border-radius: 4px;
+}
