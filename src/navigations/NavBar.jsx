@@ -29,8 +29,8 @@ const NavBar = () => {
       <div className="navbar-right">
         <div className="icon-container">
         
-          <a href="#"><img src="../chat.png" alt="Chat" className="icon" /></a>
-          <a href="#"><img src="../menu.png" alt="Menu" className="icon" /></a>
+          <a href="#"><img src="../chat.png" alt="Chat" className="icon"  onClick={() => navigate("/message")}/></a>
+          <a href="#"><img src="../menu.png" alt="Menu" className="icon"  onClick={() => navigate("/settings")}/></a>
           <a href="#" onClick={() => navigate("/profile")}>
             <img src="../jeancy.jpg" alt="Profile" className="icon user-profile" />
             

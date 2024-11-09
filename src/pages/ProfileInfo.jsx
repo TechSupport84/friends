@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import '../Feed.css';
 import Stories from './Stories';
 import CreateFeed from '../components/CreateFeed';
-import { BiCommentAdd, BiDollar, BiDotsVertical, BiLike, BiShare } from 'react-icons/bi';
+import { BiChat, BiCommentAdd, BiDollar, BiDotsVertical, BiImageAdd, BiLike, BiMessage, BiMessageAltMinus, BiMoney, BiMoneyWithdraw, BiShare } from 'react-icons/bi';
 import LimitedText from '../components/LimitedText';
 import VideoPlayer from '../components/VideoPlayer';
 import CommentPage from './CommentPage';
@@ -10,6 +10,7 @@ import "../styles/VideoPage.css"
 import "../styles/ProfileInfo.css"
 import { useNavigate } from 'react-router-dom';
 import FeedBar from '../components/FeedBar';
+import IconSvg from '../components/IconSvg';
 
 const user = [
     { id: 1, name: "Jeancy", image: "../jeancy.jpg",Description:"I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me .I want you  so much  and  need you ton help me ." ,tme: Date.now()},
@@ -26,10 +27,10 @@ const ProfileInfo = () => {
      <div className="feed-user">
      <div className="cover-picture">
   <img src="../jeancy.jpg" className="cover-pic" alt="Cover" />
-  <div className="button cover-button">+ add cover</div>
+  <div className="button cover-button"> <BiImageAdd color='#ccc'size={30}/> </div>
   <div className="userProfile">
     <img src="../jeancy.jpg" className="userImage" alt="Profile" />
-    <div className="button profile-button">+ add</div>
+    <div className="button profile-button"><BiImageAdd color='#ddd'size={30}/>   </div>
   </div>
 
 
@@ -55,13 +56,13 @@ const ProfileInfo = () => {
       
     </div>
     <div className="button-edit-profile">
-        -Edit
+        Edit Profile
     </div>
     <div className="money-earn">
-        <a href=''>Money Icon</a>
+        <a href=''> Earned <BiDollar size={30} />  </a>
     </div>
     <div className="message-Box">
-        <button>Message Icon</button>
+        <button> <IconSvg /> </button>
     </div>
   </div>
  
