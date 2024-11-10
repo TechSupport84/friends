@@ -10,7 +10,7 @@ import Monetize from '../pages/Monetize'
 import StatusSetting from '../pages/StatusSetting'
 import DashBoard from '../pages/DashBoard'
 import MessagePage from '../pages/MessagePage'
-import MessageScreen from '../screens/MessageScreen'
+import MyPages from '../pages/MyPages'
 function AppRoutes() {
   return (
     <Router>
@@ -26,6 +26,7 @@ function AppRoutes() {
            <Route path ="/status" element ={<StatusSetting/>} />
            <Route path ="/dash" element ={<DashBoard/>} />
            <Route path ="/message" element ={<MessagePage/>} />
+           <Route path ="/page" element ={<MyPages/>} />
            
         </Routes>
     </Router>

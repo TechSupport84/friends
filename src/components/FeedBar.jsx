@@ -32,7 +32,7 @@ function FeedBar() {
         Direct
       </div>
       <div 
-        onClick={() => handleNavigation("Page", "/Page")}
+        onClick={() => handleNavigation("Page", "/page")}
         className={currentPage === "Page" ? "active" : ""}
       >
         Page

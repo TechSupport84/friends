@@ -31,12 +31,27 @@
 
 }
 .nav-link:hover {
-  background-color: #e9e5e5;
+  
+  background-color: #cecccc;
   border-radius: 15px;
 
 }
+.nav-icon{
+  display: inline-flex;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.nav-icon.active{
+  background-color: #e0e0e0;
+  border-radius: 15px;
 
+}
+.nav-icon:hover {
+  background-color: #cecccc;
+  border-radius: 15px;
 
+}
 
 
 
