@@ -72,7 +72,7 @@ function CreateFeed() {
             <AiOutlineClose size={30} />
           </button>
 
-          <h2>Create Post</h2>
+          <h2>Create</h2>
           <div className="sep-line-popup" />
           <form method="POST" encType="multipart/form-data">
             <div className="profile-info-popup">
