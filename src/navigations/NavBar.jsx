@@ -33,6 +33,7 @@ const NavBar = () => {
       </a>
 
       <div className="navbar-right">
+        
         <div className="icon-container">
           <a href="#" className={`nav-link ${activeIcon === "message" ? "active" : ""}`}>
             <img
