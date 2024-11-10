@@ -6,7 +6,7 @@ import RightSidebar from "./RightSidebar"
 
 function MyPages() {
   return (
-    <div className='Home-page'>
+    <div className='Home-pages'>
      <LeftSidebar/>
       <UserPage/>
       <RightSidebar />
