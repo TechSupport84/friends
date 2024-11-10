@@ -32,16 +32,16 @@ function FeedBar() {
         Direct
       </div>
       <div 
-        onClick={() => handleNavigation("Messages", "/messages")}
-        className={currentPage === "Messages" ? "active" : ""}
+        onClick={() => handleNavigation("Page", "/Page")}
+        className={currentPage === "Page" ? "active" : ""}
       >
-        Messages
+        Page
       </div>
       <div 
-        onClick={() => handleNavigation("Notifications", "/notifications")}
-        className={currentPage === "Notifications" ? "active" : ""}
+        onClick={() => handleNavigation("Group", "/Group")}
+        className={currentPage === "Group" ? "active" : ""}
       >
-        Notifications
+        Group
       </div>
     </div>
   );

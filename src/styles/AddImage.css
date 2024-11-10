@@ -1,0 +1,24 @@
+.profile-button {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  .button {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover{
+    background-color: rgba(138, 136, 136, 0.6);
+    transition: 1.5;
+  }
