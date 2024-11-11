@@ -57,13 +57,12 @@
   color: #3e3eeb;
 }
 .scrollable-box {
-  height: 100%; /* Adjust height as needed */
+  height: 100%;
   overflow-y: auto;
   padding: 16px;
   border: 1px solid #ccc;
   background-color: #ffff;
 }
-/*online bulls
 
 /* Styling for the online indicator */
 .online-indicator {

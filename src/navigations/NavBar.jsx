@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
-import { BiBell, BiHomeAlt, BiVideo } from 'react-icons/bi';
+import { BiBell, BiHomeAlt, BiVideo, BiCheck } from 'react-icons/bi'; // Added BiCheck for "V" icon
 import { useNavigate } from 'react-router-dom';
+
 
 const NavBar = () => {
   const [activeIcon, setActiveIcon] = useState(null);
+  const [showProfileModal, setShowProfileModal] = useState(false);
   const navigate = useNavigate();
 
   const handleNavigation = (path, icon) => {
     navigate(path);
     setActiveIcon(icon);
+    setShowProfileModal(false);
+  };
+
+  const toggleProfileModal = () => {
+    setShowProfileModal(!showProfileModal);
   };
 
   return (
-    <nav className="navbar ">
+    <nav className="navbar">
       <div className="navbar-left">
         <a href="#" className="logo" onClick={() => navigate("/")}>ZedLuk</a>
         <div className="navbar-center">
@@ -41,10 +48,26 @@ const NavBar = () => {
           <a href="#" className={`nav-icon ${activeIcon === "menu" ? "active" : ""}`}>
             <img src="../menu.png" alt="Menu" className="icon" onClick={() => handleNavigation("/settings", "menu")} />
           </a>
-          
+
+          {/* Profile Icon with Checkmark Overlay */}
           <a href="#" className={`nav-icon ${activeIcon === "profile" ? "active" : ""}`}>
-            <img src="../jeancy.jpg" alt="Profile" className="icon user-profile" onClick={() => handleNavigation("/profile", "profile")} />
+            <div className="profile-icon-container" onClick={toggleProfileModal}>
+              <img
+                src="../jeancy.jpg"
+                alt="Profile"
+                className="icon user-profile"
+              />
+              <BiCheck className="profile-check-icon" size={18} /> {/* Overlay checkmark icon */}
+            </div>
           </a>
+          {showProfileModal && (
+            <div className="profile-modal">
+              <button onClick={() => handleNavigation("/page", "page")}>Page</button>
+              <button onClick={() => handleNavigation("/profile", "profile")}>View Profile</button>
+              <button onClick={() => handleNavigation("/settings", "settings")}>Settings</button>
+              <button onClick={() => console.log("Logout")}>Logout</button>
+            </div>
+          )}
         </div>
       </div>
     </nav>
