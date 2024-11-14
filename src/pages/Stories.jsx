@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Stories.css';
-import AddButton from '../components/Addbutton';
+
 
 const storiesData = [
   { id: 1, name: "Alice", image: "../jeancy.jpg" },
@@ -20,7 +20,9 @@ const Stories = () => {
   
     <div className="stories">
      <div className="create-memory">
-      <AddButton />
+      <div className="add_story">
+        +
+      </div>
      </div>
       {storiesData.map((story) => (
         <div key={story.id} className="story">

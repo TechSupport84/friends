@@ -10,9 +10,10 @@
     flex: 1;
     max-width:500px;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color:var(--background-btn);
+    color: var(--color);
     border-radius: 8px;
-    max-height:700px;
+    max-height:100%;
     
   }
 

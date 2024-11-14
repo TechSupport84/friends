@@ -9,6 +9,7 @@ import CommentPage from './CommentPage';
 import FeedBar from '../components/FeedBar';
 import Following from '../components/Following';
 import ShareModal from '../components/ShareModal'; // Import the ShareModal component
+import OnlineUser from './OnlineUser';
 
 const user = [
   { id: 1, name: "Jeancy", image: "../jeancy.jpg", Description: "Sample description text.", tme: Date.now() },
@@ -16,6 +17,7 @@ const user = [
   { id: 3, name: "Jean", image: "../jeancy.jpg", video: "../video.webm", Description: "Sample description text.", tme: Date.now() },
   { id: 4, name: "Mpoyi", image: "../jeancy.jpg", Description: "Sample description text.", tme: Date.now() },
 ];
+
 
 const Feed = () => {
   const [visible, setVisible] = useState(false);
@@ -41,6 +43,7 @@ const Feed = () => {
         <FeedBar />
         <div className="add-story">
           <Stories />
+           <OnlineUser/>
           <CreateFeed />
         </div>
 

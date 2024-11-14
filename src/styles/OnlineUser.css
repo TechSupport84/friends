@@ -1,0 +1,6 @@
+.online-stats{
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    background-color: #fff;
+  }

@@ -1,3 +1,10 @@
+:root{
+  --primaray-color:#845ce6;
+  --color:#ffffff;
+  --background-btn:#6945e6;
+  --link-color:#5271ff;
+}
+
 .feed-bar{
     display:flex;
     flex-direction: row;
@@ -7,16 +14,15 @@
     padding:10x;
     margin: 10px;
     
-    
-  
 }
+
 .feed-bar >div{
     font-size: 16px;
     font-weight: bold;
-    color: #007BFF;
+    color: var(--link-color);
     cursor: pointer;
     padding: 5px 15px;
-    border: 1px solid #007BFF;
+    border: 1px solid var(--primaray-color);
     border-radius: 5px;
     background-color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -25,12 +31,12 @@
   }
   
   .feed-bar >div:hover{
-    background-color: #007BFF;
+    background-color:var(--background-btn);
     color: white;
   }
   
 .feed-bar .active {
-    background-color: #007bff;
+    background-color:var(--background-btn);
     color: white;
     font-weight: bold;
   }

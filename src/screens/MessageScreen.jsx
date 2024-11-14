@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomButton from '../components/Button';
 import "../styles/MessageScreen.css";
 import ButtonDisabled from '../components/ButtonDisable';
+import OnlineUser from '../pages/OnlineUser';
 
 function MessageScreen() {
   const [isPressed, setIsPressed] = useState(false);
@@ -34,29 +35,40 @@ function MessageScreen() {
     <div className="message-screen">
       <div className="message-head">Messages</div>
       <div className="message-box">
+      <OnlineUser/>
         <div className="scrollable-box">
-          <p>
-            <span className="online-indicator"></span> User1: Hello!
-          </p>
-          <p>
-            <span className="online-indicator"></span> User2: Hi there!
-          </p>
-          <p>
-            <span className="online-indicator"></span> User1: How are you?
-          </p>
-          <p>
-            <span className="online-indicator"></span> User1: How are you?
-          </p>
-          <p>
-            <span className="online-indicator"></span> User2: I’m good, thanks for asking!
-          </p>
-          <p>
-            <span className="online-indicator"></span> User1: Glad to hear that!
-          </p>
-          <p>
-            <span className="online-indicator"></span> User2: How about you?
-          </p>
+       
+          <div className="messaage-detail">
+            <div className="sender">
+            <p>Hello!</p>
+              <span className='message-time'>1 min</span>
+            </div>
+     
+            <div className="receiver">
+            <p>Hey!</p>
+            <span className='message-time'>34 min</span>
+      
+            </div>
+            <div className="receiver">
+            <p>How are you  doing ?!</p>
+            <span className='message-time'>37 min</span>
+      
+            </div>
+
+            <div className="sender">
+            <p>I am  doing well  and  you  ?  </p>
+            <span className='message-time'> 40 min</span>
+      
+            </div>
+
+            <div className="receiver">
+            <p>How are you  doing ?!</p>
+            <span className='message-time'>37 min</span>
+      
+            </div>
         </div>
+        </div>
+  
       </div>
 
       <div className="message-input-box">

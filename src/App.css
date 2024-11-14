@@ -1,4 +1,12 @@
+:root{
+  --primaray-color:#845ce6;
+  --color:#ffffff;
+  --background-btn:#6945e6;
+}
+
+
 /* Profile Modal */
+
 .profile-modal {
     position: absolute;
     top: 60px;

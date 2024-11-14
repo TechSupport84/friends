@@ -1,4 +1,9 @@
-
+:root{
+  --primaray-color:#845ce6;
+  --color:#ffffff;
+  --background-btn:#6945e6;
+  --link-color:#5271ff;
+}
 
 h2 {
   font-size: 24px;

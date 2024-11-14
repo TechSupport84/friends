@@ -1,11 +1,20 @@
+:root{
+  --primaray-color:#845ce6;
+  --color:#ffffff;
+  --background-btn:#6945e6;
+}
+
+
+
 /* Base styles */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 10px;
-  background-color: #fff;
+  background-color:#fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--background-btn);
 
 }
 
@@ -54,11 +63,6 @@
 
 
 
-
-
-
-
-
 .navbar-left {
   display:flex;
   flex-direction: row;
@@ -79,10 +83,14 @@
   width: 250px; /* Adjusted for base view */
   margin-left:5px;
 }
+.search-input {
+  outline: none;
+}
 
 .navbar-right {
   display: flex;
   align-items: center;
+  align-content: center;
   gap: 15px;
   margin: 20px ;
 
@@ -95,6 +103,7 @@
 }
 
 .icon-container .icon {
+
   width: 24px;
   height: 24px;
   margin:5px;
@@ -102,15 +111,17 @@
  
 }
 .icon.user-profile{
+  
   border-radius: 50%;
-width: 30px;
-height: 30px;
+width: 34px;
+height: 34px;
 }
 
 /* Tablet view */
 @media (max-width: 992px) {
   .navbar-center .search-input {
-    width: 200px; /* Slightly narrower search bar */
+    display: flex;
+    width: 100%; /* Slightly narrower search bar */
   }
 
   .navbar-right {
@@ -143,6 +154,7 @@ height: 30px;
 /* Mobile view */
 @media (max-width: 576px) {
   .navbar-right {
+    display: flex;
     flex-direction: row;
     gap: 5px;
   }
@@ -152,9 +164,9 @@ height: 30px;
     display: none; /* Hide links, only show icons */
   }
 
-  .icon-container {
+  .icon-container,.icon {
     display: flex;
-    gap: 8px;
+    gap: 4px;
   }
 }
 

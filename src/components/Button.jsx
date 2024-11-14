@@ -5,7 +5,9 @@ import Button from '@mui/material/Button';
 export default function CustomButton({text, onClick}) {
   return (
     <Stack spacing={2} direction="row" style={{margin:15}}>
-      <Button variant="contained" onclick={onClick}>{text}</Button>
+      <Button variant="contained" onclick={onClick} style={{
+        backgroundColor:"#6945e6"
+      }}>{text}</Button>
     
     </Stack>
   );

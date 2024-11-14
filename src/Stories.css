@@ -1,3 +1,10 @@
+:root{
+  --primaray-color:#845ce6;
+  --color:#ffffff;
+  --background-btn:#6945e6;
+}
+
+
 .stories {
 
     display: flex;
@@ -13,6 +20,7 @@
   .story {
     flex: 0 0 auto;
     width: 80px;
+    height: 80px;
     margin-right: 10px;
     text-align: center;
     cursor: pointer;
@@ -58,4 +66,23 @@
     width: 100px;
     margin: 10px;
     border-radius: 5px;
+  }
+  .add_story{
+    width: 50px;
+    height: 50px;
+    background-color:var(--primaray-color) ;
+    text-align: center;
+    align-content: center;
+    color: var(--color);
+    font-weight: 25px;
+    box-shadow: 0 4px 8px rgba(151, 121, 165, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .add_story:hover{
+    background-color: #333;
+    transition: 0.1s;
+  }
+  .add_story::after{
+    background-color: var(--background-btn);
   }

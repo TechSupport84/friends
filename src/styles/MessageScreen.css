@@ -153,3 +153,54 @@
 .cancel-button:hover {
   background-color: darkred;
 }
+
+.messaage-detail{
+  padding: 10px;
+  display:block;
+  position: relative;
+  background-color: #3d3c3c;
+  height: 100vh;
+}
+.message-details,.sender{
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10px;
+  max-width: 50%;
+  background-color: #d3d1d1;
+  border-radius: 6px;
+  overflow-x: auto;
+  overflow: hidden;
+
+  
+}
+.sender{
+  display: inline-flex;
+  float:left;
+  flex-direction: column;
+}
+.receiver{
+  display: inline-flex;
+  float: right;
+  flex-direction: column;
+}
+.message-details,.receiver{
+  float: right;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  color: var(--color);
+  background-color:var(--background-btn);
+  max-width: 50%;
+  border-radius: 6px;
+  
+}
+
+.message-time{
+  font-size: 15px;
+  bottom: 0 auto;
+  right: 0;
+
+  text-align: right;
+ 
+}

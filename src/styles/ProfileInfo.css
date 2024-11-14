@@ -33,7 +33,7 @@
   }
   
   .button:hover{
-    background-color: rgba(138, 136, 136, 0.6);
+    background-color: rgba(173, 139, 139, 0.6);
     transition: 1.5;
   }
   .cover-button {
