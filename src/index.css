@@ -169,7 +169,136 @@ height: 34px;
     gap: 4px;
   }
 }
+/* redux  css  and  theme*/
+body.light-mode{
+  background-color:#fff;
+  color: #131313;
+}
+body.dark-mode{
+  background-color: #121212;
+  color: #fff;
+}
 
+body.dark-mode .navbar {
+ background-color: #121212;
+ color:#ffffff;
+}
+body.dark-mode .nav-link{
+  color: #ffffff;
+}
+body.dark-mode .post{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .username-post{
+  color: #ffffff;
+}
+body.dark-mode .popup-window{
+  background-color: #333;
+  color: #ffffff;
+}
 
+body.dark-mode .close-button{
+  color: #fff;
+}
+body.dark-mode .user-id{
+  color: #fff;
+}
+body.dark-mode .stories{
+background-color: #121212;
+color: #ffffff;
+}
+body.dark-mode .story-name{
+color: #ffffff;
+}
+body.dark-mode .create-memory{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .online-stats{
+  background-color: #121212;
 
+}
+body.dark-mode .feed {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode .feed-ba>div{
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode .profile-modal{
+  background-color: #121212;
+  border-color: #121212;
+}
+body.dark-mode .profile-modal>button{
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode .profile-modal>button:hover{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .icon-container{
+  color: #ffffff;
+}
+body.dark-mode .message-input-box {
+  background-color: #121212;
+  color: #ffffff;
+}
 
+body.dark-mode .message-screen
+{
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .scrollable-box{
+  background-color: #121212;
+
+}
+
+body.dark-mode .scrollable-box{
+  background-color: #121212;
+
+}
+body.dark-mode .textarea-container >textarea{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .messaage-detail >.sender{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .search-input{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .feed-bar>div{
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-mode .feed-bar>div:hover{
+  background-color:var(--background-btn);
+  color: #ffffff;
+}
+body.dark-mode .modal-content{
+  background-color: #121212;
+  color: #ffffff;
+
+}
+body.dark-mode .modal-content >button{
+  background-color: #121212;
+  color: #ffffff;
+
+}
+body.dark-mode .modal-content >button:hover{
+  background-color: #333;
+  color: #ffffff;
+
+}
+body.dark-mode .border-form>textarea{
+  background-color: #333;
+  color: #ffffff;
+
+}
